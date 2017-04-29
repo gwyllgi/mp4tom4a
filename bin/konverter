@@ -1,0 +1,16 @@
+#!/bin/sh
+echo "##########################"
+echo "######## KONVERSI ########"
+echo "#### Required Package ####"
+echo "######### FFmpeg #########"
+echo "######### Coder ##########"
+echo "# Raptor also as Gwyllgi #" 
+echo "##########################"
+
+echo -n "Enter source mp4 file (ex: /home/user/file.mp4): "
+read awal
+echo -n "Enter destination m4a file (ex: /home/user/file.m4a) : "
+read jadi
+
+ffmpeg -i $awal -vn -acodec copy $jadi
+
